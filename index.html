@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>CRUD sena</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CRUD SENA 2024</h1>
+    <div class="form-group">
+      <label for="identification">Identificación:</label>
+      <input type="text" id="identification" placeholder="Ingresa la identificación">
+    </div>
+    <div class="form-group">
+      <label for="names">Nombres:</label>
+      <input type="text" id="names" placeholder="Ingresa los nombres">
+    </div>
+    <div class="form-group">
+      <label for="surnames">Apellidos:</label>
+      <input type="text" id="surnames" placeholder="Ingresa los apellidos">
+    </div>
+    <div class="form-group">
+      <label for="email">Correo:</label>
+      <input type="text" id="email" placeholder="Ingresa el correo">
+    </div>
+    <div class="form-group">
+      <button id="save-btn"><i class="fas fa-save"></i> Guardar</button>
+      <button id="show-btn"><i class="fas fa-list"></i> Mostrar</button>
+      <button id="update-btn"><i class="fas fa-edit"></i> Modificar</button>
+      <button id="delete-btn" class="delete"><i class="fas fa-trash"></i> Eliminar</button>
+      <input type="text" id="search-input" placeholder="Buscar por nombre">
+    </div>
+
+    
+    <table id="data-table">
+      <thead>
+        <tr>
+          <th>Identificación</th>
+          <th>Nombres</th>
+          <th>Apellidos</th>
+          <th>Correo</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Ventana emergente -->
+  <div id="alert-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-btn">&times;</span>
+      <p id="alert-message">Completa todos los campos por favor</p>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
